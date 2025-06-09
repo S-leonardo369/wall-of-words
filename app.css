@@ -1,0 +1,171 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto Mono";
+    background-color: #e9ecef;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #adb5bd;
+    align-items: flex-start;
+    padding: 20px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul,
+li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    align-items: flex-start;
+}
+
+.logo {
+    font-family: "Audiowide";
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.download {
+    background-color: black;
+    color: white;
+    border: 1.5px solid black;
+    padding: 5px 20px;
+    border-radius: 1.2em;
+    transition: background-color 1s;
+}
+
+.download:hover {
+    background-color: #dee2e6;
+    color: black;
+    cursor: pointer;
+
+}
+
+.middle-part {
+    margin-top: 30px;
+    display: flex;
+}
+
+.middle-part section {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+}
+
+.slideshow {
+    position: relative;
+    width: 2000px;
+    height: 470px;
+    margin: 30px;
+    overflow: hidden;
+    border-radius: 1.5em;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: fade 12s infinite;
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 8s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.middle-part .title {
+    font-size: 50px;
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: #6c757d;
+    padding: 20px;
+}
+
+.foot #about {
+    max-width: 50%;
+    padding: 30px;
+    font-size: 13px;
+}
+
+.foot ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.foot a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.foot a:hover {
+    color: #495057;
+}
+
+.foot .module {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+.foot img {
+    width: 30px;
+}
